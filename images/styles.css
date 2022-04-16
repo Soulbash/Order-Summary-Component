@@ -1,3 +1,5 @@
+/* Global Varibales */
+
 :root {
   /* Colors */
 
@@ -35,7 +37,15 @@
   --fw-500: 500;
   --fw-700: 700;
   --fw-900: 900;
+
+  /* Box-Shadow */
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  --borderRadius: 0.5rem;
 }
+
+/* End of Global Varibales */
 
 /* Remove Default Margin / Padding */
 * {
@@ -62,4 +72,75 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+
+/* Remove default underline */
+a {
+  text-decoration: none;
+}
+
+/* Remove List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  background: var(--paleblue) url(./pattern-background-desktop.svg) no-repeat;
+  font-family: var(--font);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-500);
+  color: var(--desaturatedblue);
+  max-width: 1440px;
+  line-height: 1.5;
+
+  /* center */
+
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.card-title {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: var(--fs-900);
+  font-weight: var(--fw-900);
+  color: var(--black);
+}
+
+.card-text {
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  font-weight: var(--fs-700);
+  font-weight: var(--fw-700);
+  color: var(--black);
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 450px;
+  max-height: 697px;
+  border-radius: var(--borderRadius);
+}
+
+.hero {
+}
+
+.plan-box {
+  background-color: var(--grey-100);
+  max-width: ;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.plan {
+  padding: 0 2rem;
+}
+
+.push {
+  margin-left: auto;
 }
